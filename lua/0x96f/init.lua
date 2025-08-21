@@ -326,6 +326,7 @@ local function apply_highlights()
 		SnacksPickerGitStaged = { fg = colors.git_add },
 		SnacksPickerGitRenamed = { fg = colors.purple_light },
 		SnacksPickerGitIgnored = { fg = colors.fg_dim },
+		SnacksPickerGitStatusUntracked = { fg = colors.git_untracked },
 
 		-- Indent blankline
 		IndentBlanklineChar = { fg = "#404040" },
