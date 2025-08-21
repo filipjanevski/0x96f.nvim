@@ -295,11 +295,17 @@ local function apply_highlights()
 		NvimTreeRootFolder = { fg = colors.green_light, bold = true },
 		NvimTreeSpecialFile = { fg = colors.yellow, underline = true },
 		NvimTreeGitDirty = { fg = colors.git_change },
-		NvimTreeGitNew = { fg = colors.git_add },
+		NvimTreeGitNew = { fg = colors.git_untracked },
 		NvimTreeGitDeleted = { fg = colors.git_delete },
 		NvimTreeGitStaged = { fg = colors.git_add },
 		NvimTreeGitMerge = { fg = colors.orange },
 		NvimTreeGitRenamed = { fg = colors.purple_light },
+		NvimTreeGitIgnored = { fg = colors.fg_dim },
+		NvimTreeFileNew = { fg = colors.git_untracked },
+		NvimTreeFileRenamed = { fg = colors.purple_light },
+		NvimTreeFileDirty = { fg = colors.git_change },
+		NvimTreeFileStaged = { fg = colors.git_add },
+		NvimTreeFileIgnored = { fg = colors.fg_dim },
 
 		-- Indent blankline
 		IndentBlanklineChar = { fg = "#404040" },
