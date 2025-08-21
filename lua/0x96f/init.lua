@@ -398,7 +398,7 @@ local function apply_highlights()
 
 		-- Snacks picker (general)
 		SnacksPickerNormal = { fg = colors.fg, bg = colors.bg },
-		SnacksPickerDir = { fg = colors.fg, bg = colors.bg },
+		SnacksPickerDir = { fg = colors.fg_dim },
 		SnacksPickerBorder = { fg = colors.border, bg = colors.bg },
 		SnacksPickerTitle = { fg = colors.bg, bg = colors.green_light },
 		SnacksPickerPrompt = { fg = colors.fg, bg = colors.bg_light },
