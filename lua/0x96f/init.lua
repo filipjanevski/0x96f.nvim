@@ -9,7 +9,7 @@ local colors = {
 	-- UI colors
 	bg_dark = "#1C1B1C",
 	bg_light = "#322E32",
-	bg_lighter = "#454045",
+	bg_lighter = "#3A363A",
 	border = "#555555",
 
 	-- Text colors
