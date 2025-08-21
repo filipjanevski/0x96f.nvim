@@ -318,6 +318,15 @@ local function apply_highlights()
 		NvimTreeUntrackedFile = { fg = colors.git_untracked },
 		NvimTreeUntrackedIcon = { fg = colors.git_untracked },
 
+		-- Snacks Picker Git
+		SnacksPickerGitAdd = { fg = colors.git_add },
+		SnacksPickerGitChange = { fg = colors.git_change },
+		SnacksPickerGitDelete = { fg = colors.git_delete },
+		SnacksPickerGitUntracked = { fg = colors.git_untracked },
+		SnacksPickerGitStaged = { fg = colors.git_add },
+		SnacksPickerGitRenamed = { fg = colors.purple_light },
+		SnacksPickerGitIgnored = { fg = colors.fg_dim },
+
 		-- Indent blankline
 		IndentBlanklineChar = { fg = "#404040" },
 		IndentBlanklineContextChar = { fg = "#707070" },
