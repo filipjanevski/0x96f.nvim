@@ -33,7 +33,7 @@ local colors = {
 
 	-- Special colors
 	cursor = "#FFBD3E",
-	selection = "#B5A5B540",
+	selection = "#4A454A",
 	line_highlight = "#333032",
 	comment = "#757075",
 
@@ -98,10 +98,10 @@ local function apply_highlights()
 		PmenuThumb = { bg = colors.fg_dim },
 
 		-- Diff
-		DiffAdd = { bg = "#BCDF5933" },
-		DiffChange = { bg = "#49CAE433" },
-		DiffDelete = { bg = "#FF727233" },
-		DiffText = { bg = "#49CAE466" },
+		DiffAdd = { bg = "#2A3A25" },
+		DiffChange = { bg = "#253540" },
+		DiffDelete = { bg = "#3A2525" },
+		DiffText = { bg = "#2A4050" },
 
 		-- Syntax highlighting
 		Comment = { fg = colors.comment, italic = true },

@@ -115,37 +115,6 @@ local colors = require("0x96f").colors
 -- Use colors.blue, colors.green, etc. in your custom highlights
 ```
 
-## Color Palette
-
-The theme uses a carefully selected color palette:
-
-- **Background**: `#262427`
-- **Foreground**: `#FCFCFC`
-- **Blue**: `#49CAE4`
-- **Cyan**: `#AEE8F4`
-- **Green**: `#C6E472`
-- **Yellow**: `#FFD271`
-- **Orange**: `#FC9D6F`
-- **Red**: `#FF7272`
-- **Purple**: `#AEA3E6`
-
-## Plugin Support
-
-0x96f.nvim includes optimized highlighting for:
-
-- Tree-sitter
-- LSP diagnostics
-- Telescope
-- nvim-tree
-- which-key
-- indent-blankline
-- GitSigns
-- Dashboard
-
-## Author
-
-**Filip Janevski** - [@filipjanevski](https://github.com/filipjanevski)
-
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.
