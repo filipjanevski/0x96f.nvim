@@ -1,0 +1,151 @@
+# 0x96f.nvim
+
+A dark Neovim colorscheme with vibrant syntax highlighting, inspired by modern code editors.
+
+## Features
+
+- 🎨 Rich syntax highlighting with Tree-sitter support
+- 🔧 LSP diagnostics integration
+- 📦 Plugin support (Telescope, nvim-tree, which-key, etc.)
+- ⚡ Optimized for modern Neovim
+- 🌙 Dark theme optimized for long coding sessions
+
+## Installation
+
+### Quick Install (Recommended)
+
+Use the automated install script:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/filipjanevski/0x96f.nvim/main/install.sh | bash
+```
+
+Or download and run manually:
+
+```bash
+wget https://raw.githubusercontent.com/filipjanevski/0x96f.nvim/main/install.sh
+chmod +x install.sh
+./install.sh
+```
+
+The script will:
+
+- Auto-detect your plugin manager (lazy.nvim, packer.nvim, vim-plug)
+- Create appropriate configuration files
+- Backup existing configurations
+- Provide setup instructions
+
+#### Install Script Options
+
+```bash
+./install.sh [OPTIONS]
+
+OPTIONS:
+    -d, --dir DIR           Neovim configuration directory (default: ~/.config/nvim)
+    -m, --manager MANAGER   Plugin manager (lazy, packer, plug)
+    -f, --force            Force installation (overwrite existing files)
+    -h, --help             Show help message
+
+EXAMPLES:
+    ./install.sh                                    # Auto-detect setup
+    ./install.sh -m lazy                           # Install for lazy.nvim
+    ./install.sh -d ~/.config/nvim-custom          # Custom config directory
+    ./install.sh -m packer -f                     # Force install for packer.nvim
+```
+
+### Manual Installation
+
+### Using [lazy.nvim](https://github.com/folke/lazy.nvim)
+
+```lua
+{
+  "filipjanevski/0x96f.nvim",
+  priority = 1000,
+  config = function()
+    require("0x96f").setup()
+    vim.cmd.colorscheme("0x96f")
+  end,
+}
+```
+
+### Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
+
+```lua
+use {
+  "filipjanevski/0x96f.nvim",
+  config = function()
+    require("0x96f").setup()
+    vim.cmd.colorscheme("0x96f")
+  end
+}
+```
+
+### Using vim-plug
+
+```vim
+Plug 'filipjanevski/0x96f.nvim'
+```
+
+Then in your init.lua:
+
+```lua
+require("0x96f").setup()
+vim.cmd.colorscheme("0x96f")
+```
+
+## Usage
+
+### Basic setup
+
+```lua
+require("0x96f").setup()
+vim.cmd.colorscheme("0x96f")
+```
+
+### Traditional vim command
+
+```vim
+colorscheme 0x96f
+```
+
+### Accessing colors
+
+```lua
+local colors = require("0x96f").colors
+-- Use colors.blue, colors.green, etc. in your custom highlights
+```
+
+## Color Palette
+
+The theme uses a carefully selected color palette:
+
+- **Background**: `#262427`
+- **Foreground**: `#FCFCFC`
+- **Blue**: `#49CAE4`
+- **Cyan**: `#AEE8F4`
+- **Green**: `#C6E472`
+- **Yellow**: `#FFD271`
+- **Orange**: `#FC9D6F`
+- **Red**: `#FF7272`
+- **Purple**: `#AEA3E6`
+
+## Plugin Support
+
+0x96f.nvim includes optimized highlighting for:
+
+- Tree-sitter
+- LSP diagnostics
+- Telescope
+- nvim-tree
+- which-key
+- indent-blankline
+- GitSigns
+- Dashboard
+
+## Author
+
+**Filip Janevski** - [@filipjanevski](https://github.com/filipjanevski)
+
+## License
+
+MIT License - see [LICENSE](LICENSE) for details.
