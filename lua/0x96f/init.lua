@@ -359,6 +359,68 @@ local function apply_highlights()
 		SnacksPickerGitIgnored = { fg = colors.fg_dim },
 		SnacksPickerGitStatusUntracked = { fg = colors.git_untracked },
 
+		-- Snacks general highlights
+		SnacksNormal = { fg = colors.fg, bg = colors.bg },
+		SnacksBorder = { fg = colors.border, bg = colors.bg },
+		SnacksTitle = { fg = colors.bg, bg = colors.blue, bold = true },
+		SnacksText = { fg = colors.fg },
+		SnacksIconError = { fg = colors.error },
+		SnacksIconWarn = { fg = colors.warning },
+		SnacksIconInfo = { fg = colors.info },
+		SnacksIconDebug = { fg = colors.hint },
+		SnacksIconTrace = { fg = colors.fg_dim },
+
+		-- Snacks dashboard
+		SnacksDashboardNormal = { fg = colors.fg, bg = colors.bg },
+		SnacksDashboardHeader = { fg = colors.blue, bold = true },
+		SnacksDashboardIcon = { fg = colors.blue },
+		SnacksDashboardTitle = { fg = colors.green_light },
+		SnacksDashboardDesc = { fg = colors.fg_dim },
+		SnacksDashboardKey = { fg = colors.purple_light },
+		SnacksDashboardTerminal = { fg = colors.cyan },
+		SnacksDashboardFooter = { fg = colors.fg_dim, italic = true },
+
+		-- Snacks notifications
+		SnacksNotifierNormal = { fg = colors.fg, bg = colors.bg_light },
+		SnacksNotifierBorder = { fg = colors.border, bg = colors.bg_light },
+		SnacksNotifierTitle = { fg = colors.fg_bright, bold = true },
+		SnacksNotifierIconError = { fg = colors.error },
+		SnacksNotifierIconWarn = { fg = colors.warning },
+		SnacksNotifierIconInfo = { fg = colors.info },
+		SnacksNotifierIconDebug = { fg = colors.hint },
+		SnacksNotifierIconTrace = { fg = colors.fg_dim },
+
+		-- Snacks input
+		SnacksInputNormal = { fg = colors.fg, bg = colors.bg_light },
+		SnacksInputBorder = { fg = colors.border, bg = colors.bg_light },
+		SnacksInputTitle = { fg = colors.bg, bg = colors.blue },
+		SnacksInputIcon = { fg = colors.blue },
+
+		-- Snacks picker (general)
+		SnacksPickerNormal = { fg = colors.fg, bg = colors.bg },
+		SnacksPickerDir = { fg = colors.fg, bg = colors.bg },
+		SnacksPickerBorder = { fg = colors.border, bg = colors.bg },
+		SnacksPickerTitle = { fg = colors.bg, bg = colors.green_light },
+		SnacksPickerPrompt = { fg = colors.fg, bg = colors.bg_light },
+		SnacksPickerPromptBorder = { fg = colors.border, bg = colors.bg_light },
+		SnacksPickerSelection = { bg = colors.bg_lighter },
+		SnacksPickerSelectionCaret = { fg = colors.blue },
+		SnacksPickerMatching = { fg = colors.blue, bold = true },
+		SnacksPickerCounter = { fg = colors.fg_dim },
+		SnacksPickerIcon = { fg = colors.blue },
+
+		-- Snacks terminal
+		SnacksTerminalNormal = { fg = colors.fg, bg = colors.bg },
+		SnacksTerminalBorder = { fg = colors.border, bg = colors.bg },
+		SnacksTerminalTitle = { fg = colors.bg, bg = colors.orange },
+
+		-- Snacks windows
+		SnacksWinNormal = { fg = colors.fg, bg = colors.bg },
+		SnacksWinBorder = { fg = colors.border, bg = colors.bg },
+		SnacksWinTitle = { fg = colors.fg_bright, bold = true },
+		SnacksWinBar = { fg = colors.fg, bg = colors.bg_dark },
+		SnacksWinBarNC = { fg = colors.fg_dim, bg = colors.bg_dark },
+
 		-- Indent blankline
 		IndentBlanklineChar = { fg = "#404040" },
 		IndentBlanklineContextChar = { fg = "#707070" },
