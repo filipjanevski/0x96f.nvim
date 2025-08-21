@@ -1,14 +1,10 @@
 # 0x96f.nvim
 
-A dark Neovim colorscheme with vibrant syntax highlighting, inspired by modern code editors.
+A simple and pleasant dark theme for Neovim.
 
-## Features
+## Screenshots
 
-- 🎨 Rich syntax highlighting with Tree-sitter support
-- 🔧 LSP diagnostics integration
-- 📦 Plugin support (Telescope, nvim-tree, which-key, etc.)
-- ⚡ Optimized for modern Neovim
-- 🌙 Dark theme optimized for long coding sessions
+![Screenshot](./screenshot.png)
 
 ## Installation
 
