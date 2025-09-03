@@ -111,6 +111,38 @@ local colors = require("0x96f").colors
 -- Use colors.blue, colors.green, etc. in your custom highlights
 ```
 
+### Lualine Integration
+
+This theme includes a custom lualine theme for better integration. To use it:
+
+```lua
+require('lualine').setup {
+  options = {
+    theme = '0x96f'
+  },
+  -- your other lualine config...
+}
+```
+
+Or if you're setting up the theme programmatically:
+
+```lua
+require("0x96f").setup()
+require('lualine').setup {
+  options = {
+    theme = require("0x96f").get_lualine_theme()
+  },
+  -- your other lualine config...
+}
+```
+
+The lualine theme includes:
+
+- Mode-specific colors (normal, insert, visual, replace, command)
+- Proper color transitions between sections
+- Consistent styling with the overall theme
+- Support for inactive windows
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.

@@ -5,6 +5,7 @@ local colors = {
 	-- Main colors
 	bg = "#262427",
 	fg = "#FCFCFC",
+	black = "#000000",
 
 	-- UI colors
 	bg_dark = "#1C1B1C",
@@ -85,6 +86,78 @@ local function apply_highlights()
 		-- Statusline
 		StatusLine = { fg = colors.fg, bg = colors.bg_dark },
 		StatusLineNC = { fg = colors.fg_dim, bg = colors.bg_dark },
+
+		-- Lualine (custom)
+		lualine_a_normal = { fg = colors.fg_bright, bg = colors.bg_dark, bold = true },
+		lualine_a_insert = { fg = colors.bg, bg = colors.yellow, bold = true },
+		lualine_a_visual = { fg = colors.fg_bright, bg = colors.blue, bold = true },
+		lualine_a_replace = { fg = colors.fg_bright, bg = colors.red, bold = true },
+		lualine_a_command = { fg = colors.bg, bg = colors.green, bold = true },
+		lualine_a_inactive = { fg = colors.fg_dim, bg = colors.bg_dark, bold = true },
+
+		-- Git section (light gray bg, white text)
+		lualine_b_normal = { fg = colors.fg_bright, bg = colors.bg_light },
+		lualine_b_insert = { fg = colors.fg_bright, bg = colors.bg_light },
+		lualine_b_visual = { fg = colors.fg_bright, bg = colors.bg_light },
+		lualine_b_replace = { fg = colors.fg_bright, bg = colors.bg_light },
+		lualine_b_command = { fg = colors.fg_bright, bg = colors.bg_light },
+		lualine_b_inactive = { fg = colors.fg_dim, bg = colors.bg_dark },
+
+		-- Middle sections
+		lualine_c_normal = { fg = colors.fg, bg = colors.bg },
+		lualine_c_insert = { fg = colors.fg, bg = colors.bg },
+		lualine_c_visual = { fg = colors.fg, bg = colors.bg },
+		lualine_c_replace = { fg = colors.fg, bg = colors.bg },
+		lualine_c_command = { fg = colors.fg, bg = colors.bg },
+		lualine_c_inactive = { fg = colors.fg_dim, bg = colors.bg },
+
+		lualine_x_normal = { fg = colors.fg, bg = colors.bg },
+		lualine_x_insert = { fg = colors.fg, bg = colors.bg },
+		lualine_x_visual = { fg = colors.fg, bg = colors.bg },
+		lualine_x_replace = { fg = colors.fg, bg = colors.bg },
+		lualine_x_command = { fg = colors.fg, bg = colors.bg },
+		lualine_x_inactive = { fg = colors.fg_dim, bg = colors.bg },
+
+		lualine_y_normal = { fg = colors.fg, bg = colors.bg_light },
+		lualine_y_insert = { fg = colors.fg, bg = colors.bg_light },
+		lualine_y_visual = { fg = colors.fg, bg = colors.bg_light },
+		lualine_y_replace = { fg = colors.fg, bg = colors.bg_light },
+		lualine_y_command = { fg = colors.fg, bg = colors.bg_light },
+		lualine_y_inactive = { fg = colors.fg_dim, bg = colors.bg },
+
+		-- Time/right section (white text, dark gray bg)
+		lualine_z_normal = { fg = colors.fg_bright, bg = colors.bg_dark },
+		lualine_z_insert = { fg = colors.fg_bright, bg = colors.bg_dark },
+		lualine_z_visual = { fg = colors.fg_bright, bg = colors.bg_dark },
+		lualine_z_replace = { fg = colors.fg_bright, bg = colors.bg_dark },
+		lualine_z_command = { fg = colors.fg_bright, bg = colors.bg_dark },
+		lualine_z_inactive = { fg = colors.fg_dim, bg = colors.bg_dark },
+
+		-- Lualine transitional highlights
+		lualine_transitional_lualine_a_normal_to_lualine_b_normal = { fg = colors.bg_dark, bg = colors.bg_light },
+		lualine_transitional_lualine_a_insert_to_lualine_b_insert = { fg = colors.yellow, bg = colors.bg_light },
+		lualine_transitional_lualine_a_visual_to_lualine_b_visual = { fg = colors.blue, bg = colors.bg_light },
+		lualine_transitional_lualine_a_replace_to_lualine_b_replace = { fg = colors.red, bg = colors.bg_light },
+		lualine_transitional_lualine_a_command_to_lualine_b_command = { fg = colors.green, bg = colors.bg_light },
+
+		lualine_transitional_lualine_b_normal_to_lualine_c_normal = { fg = colors.bg_light, bg = colors.bg },
+		lualine_transitional_lualine_b_insert_to_lualine_c_insert = { fg = colors.bg_light, bg = colors.bg },
+		lualine_transitional_lualine_b_visual_to_lualine_c_visual = { fg = colors.bg_light, bg = colors.bg },
+		lualine_transitional_lualine_b_replace_to_lualine_c_replace = { fg = colors.bg_light, bg = colors.bg },
+		lualine_transitional_lualine_b_command_to_lualine_c_command = { fg = colors.bg_light, bg = colors.bg },
+
+		lualine_transitional_lualine_y_normal_to_lualine_z_normal = { fg = colors.bg_light, bg = colors.bg_dark },
+		lualine_transitional_lualine_y_insert_to_lualine_z_insert = { fg = colors.bg_light, bg = colors.bg_dark },
+		lualine_transitional_lualine_y_visual_to_lualine_z_visual = { fg = colors.bg_light, bg = colors.bg_dark },
+		lualine_transitional_lualine_y_replace_to_lualine_z_replace = { fg = colors.bg_light, bg = colors.bg_dark },
+		lualine_transitional_lualine_y_command_to_lualine_z_command = { fg = colors.bg_light, bg = colors.bg_dark },
+
+		-- Lualine mode indicators
+		lualine_mode_normal = { fg = colors.fg_bright, bg = colors.bg_dark, bold = true },
+		lualine_mode_insert = { fg = colors.bg, bg = colors.yellow, bold = true },
+		lualine_mode_visual = { fg = colors.fg_bright, bg = colors.blue, bold = true },
+		lualine_mode_replace = { fg = colors.fg_bright, bg = colors.red, bold = true },
+		lualine_mode_command = { fg = colors.bg, bg = colors.green, bold = true },
 
 		-- Tabs
 		TabLine = { fg = colors.fg_dim, bg = colors.bg_dark },
@@ -454,5 +527,10 @@ end
 
 -- Make colors accessible
 M.colors = colors
+
+-- Get lualine theme
+function M.get_lualine_theme()
+	return require("lualine.themes.0x96f")
+end
 
 return M
